@@ -93,6 +93,9 @@ public class MainActivity extends AppCompatActivity {
         if(CheckingForComplete()){
             Toast.makeText(this, "You have entered you're account", Toast.LENGTH_SHORT).show();
         }
+        else{
+            Toast.makeText(this, "Enter all the data", Toast.LENGTH_SHORT).show();
+        }
     }
     public void changeVisibility(View v){
         if(PasswordBox.getInputType() == InputType.TYPE_TEXT_VARIATION_PASSWORD){

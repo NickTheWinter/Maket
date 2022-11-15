@@ -113,7 +113,7 @@ public class RegActivity extends AppCompatActivity {
     }
     private Boolean CheckingForComplete(){
         if(FullName.getText().toString() != "" &&
-                EmailOrPhone.getText().toString() != ""&&
+                EmailOrPhone.getText().toString() != "" &&
                 PasswordConfirm.getText().toString() != "" &&
                 Password.getText().toString() != ""&&
                 Remember.isChecked() == true){
@@ -129,16 +129,13 @@ public class RegActivity extends AppCompatActivity {
     }
 
     public void Register(View v){
-        if(Password.getText().toString() == PasswordConfirm.getText().toString() && CheckingForComplete()){
-            Toast.makeText(this,"Account created successfully",Toast.LENGTH_SHORT).show();
-        }
-        else{
-            Toast.makeText(this,"Enter correct data",Toast.LENGTH_SHORT).show();
-        }
+
+        intent = new Intent(this,CreatedAccount.class);
+        startActivity(intent);
     }
 
     public void changePasswordVisibility(View v){
-        if(Password.getInputType() == InputType.TYPE_TEXT_VARIATION_PASSWORD){
+        if(Password.getInputType() == InputType.TYPE_TEXT_VARIATION_WEB_PASSWORD){
             Password.setInputType(InputType.TYPE_CLASS_TEXT);
             Stick.setVisibility(View.INVISIBLE);
         }

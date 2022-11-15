@@ -3,10 +3,10 @@
     <item>
         <shape android:shape="oval" android:thickness="5dp"
             android:useLevel="false">
-            <size android:height="100dp" android:width="100dp"/>
-            <stroke android:color="@color/pink_400" android:width="12dp"/>
+            <size android:height="34dp" android:width="34dp"/>
+            <stroke android:color="@color/pink_400" android:width="3.123dp"/>
             <solid android:color="@color/gray_900"/>
-            <padding android:right="10dp" android:left="10dp" android:bottom="10dp" android:top="10dp"/>
+            <padding android:right="1dp" android:left="1dp" android:bottom="1dp" android:top="1dp"/>
         </shape>
     </item>
     <item>
